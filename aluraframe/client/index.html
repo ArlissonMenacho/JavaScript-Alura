@@ -60,11 +60,19 @@
         </table>
         <!-- <script src="js/index.js"></script> -->
         <script src="js/app/models/Negociacao.js"></script>
-        <script>
-            var n1 = new Negociacao(new Date(),1,100);
+        <script> 
+            var hoje = new Date();
+            var n1 = new Negociacao(hoje,1,100);
             Object.freeze(n1);
+
+            console.log(n1.data);
+
+            hoje.setDate(20);
             n1._quantidade=1000;
-            console.log(n1.quantidade);
+
+            console.log(n1.quantidade); 
+            console.log(n1.data);
+            
         </script>
     </body>
 </html>
