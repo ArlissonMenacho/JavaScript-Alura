@@ -62,15 +62,9 @@
         <script src="js/app/models/Negociacao.js"></script>
         <script>
             var n1 = new Negociacao(new Date(),1,100);
-            console.log('Criando Objeto ' + n1);
-            var volume = n1.volume;
-            console.log('Calculando volume = ' + volume)
-
-            n1.quantidade = 10;
-            console.log('Dia cadastrado = ' + n1.dia);
-            console.log('Quantidade = ' + n1.quantidade);
-            console.log('Valor = ' + n1.valor);
-            console.log(n1._quantidade);
+            Object.freeze(n1);
+            n1._quantidade=1000;
+            console.log(n1.quantidade);
         </script>
     </body>
 </html>
