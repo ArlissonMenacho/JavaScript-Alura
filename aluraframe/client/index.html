@@ -63,13 +63,13 @@
         <script>
             var n1 = new Negociacao(new Date(),1,100);
             console.log('Criando Objeto ' + n1);
-            var volume = n1.obterVolume();
+            var volume = n1.volume;
             console.log('Calculando volume = ' + volume)
 
-            n1._quantidade = 10;
-            console.log('Dia cadastrado = ' + n1.getDia());
-            console.log('Quantidade = ' + n1.getQuantidade());
-            console.log('Valor = ' + n1.getValor(0));
+            n1.quantidade = 10;
+            console.log('Dia cadastrado = ' + n1.dia);
+            console.log('Quantidade = ' + n1.quantidade);
+            console.log('Valor = ' + n1.valor);
             console.log(n1._quantidade);
         </script>
     </body>
