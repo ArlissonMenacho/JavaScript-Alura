@@ -1,13 +1,13 @@
-class ViewBase{
-    constructor(elemento){
+class ViewBase {
+    constructor(elemento) {
         this._elemento = elemento;
     }
 
-    template(){
+    template() {
         throw new Error('O método template deve ser implementado.')
     }
 
-    update(modelo){
+    update(modelo) {
         this._elemento.innerHTML = this.template(modelo);
     }
 }

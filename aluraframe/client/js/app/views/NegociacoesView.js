@@ -1,7 +1,7 @@
 class NegociacoesView extends ViewBase {
 
     constructor(elemento) {
-       super(elemento);
+        super(elemento);
     }
 
     template(model) {
@@ -37,7 +37,7 @@ class NegociacoesView extends ViewBase {
                 </tfoot>
             </table > `;
     }
-   
+
 }
 
 
