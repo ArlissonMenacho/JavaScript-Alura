@@ -1,7 +1,7 @@
-class NegociacoesView {
+class NegociacoesView extends ViewBase {
 
-    constructor(elementoOndeSeraCarregado) {
-        this._elemento = elementoOndeSeraCarregado;
+    constructor(elemento) {
+       super(elemento);
     }
 
     template(model) {
@@ -37,11 +37,7 @@ class NegociacoesView {
                 </tfoot>
             </table > `;
     }
-
-    update(model) {
-        this._elemento.innerHTML = this.template(model);
-    }
-
+   
 }
 
 
